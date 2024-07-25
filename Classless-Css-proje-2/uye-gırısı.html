@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <title>Üye Girişi</title>
+</head>
+
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>KİTAP KOLİK</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Çok Okunanlar</a></li>
+      <li><a href="kıtap-setlerı.html">Kitap Setleri</a></li>
+      <li><a href="yazarlardan-secmece.html">Yazarlardan Seçmece</a></li>
+      <li><a href="uye-gırısı.html"><button class="secondary">Üye Girişi</button></a></li>
+    </ul>
+  </nav>
+  <article>
+    <header>
+      <h2>Üye Girişi</h2>
+    </header>
+    <form>
+      <fieldset class="grid">
+        <input name="login" placeholder="Kullanıcı Adı" aria-label="Login" autocomplete="username" />
+        <input type="password" name="password" placeholder="Password" aria-label="Password"
+          autocomplete="current-password" />
+        <input type="submit" value="Giriş" />
+      </fieldset>
+    </form>
+  </article>
+
+  <article>
+    <header>
+      <h2>Üye Ol</h2>
+    </header>
+    <form action="html.php">
+      AD
+      <input type="text" name="text" placeholder="Ad" aria-label="Text" required />
+      SOYAD
+      <input type="text" name="text" placeholder="Soyad" aria-label="Text" required />
+      EMAİL
+      <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email" required />
+      TEL
+      <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel" />
+      ŞİFRE
+      <input type="password" name="Şifre" placeholder="Password" aria-label="Password" required />
+      DOĞUM TARİHİ
+      <input type="date" name="date" aria-label="Date" />
+      <fieldset>
+        <legend>Cinsiyet</legend>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+        <label for="kadin">Kadın</label>
+        <input type="radio" id="diger" name="cinsiyet" value="diger">
+        <label for="diger">Diğer</label>
+      </fieldset>
+      <input type="submit" value="Gönder" />
+    </form>
+  </article>
+
+
+</body>
+
+</html>
